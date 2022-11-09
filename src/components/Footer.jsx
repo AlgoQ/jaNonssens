@@ -21,12 +21,12 @@ export function Footer() {
           <Container.Inner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                <NavLink href="/#top">Ik</NavLink>
-                <NavLink href="/#content">Kunstwerken</NavLink>
+                <NavLink href="/#top">Ja</NavLink>
+                <NavLink href="/#content">Ja Nonssens Op Doek</NavLink>
                 <NavLink href="/#bottom">Contact</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Jo Janssens. Alle rechten gereserveerd
+                &copy; {new Date().getFullYear()} Jo Janssens. Alle rechten gereserveerd - Made by <a href='https://github.com/AlgoQ' className='underline text-slate-800'>AlgoQ</a>
               </p>
             </div>
           </Container.Inner>

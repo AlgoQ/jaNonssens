@@ -3,24 +3,13 @@ import Head from 'next/head'
 import Link from 'next/link'
 import clsx from 'clsx'
 
-import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import { Content } from '@/components/Content'
-import {
-  TwitterIcon,
-  InstagramIcon,
-  GitHubIcon,
-  LinkedInIcon,
-} from '@/components/SocialIcons'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
-import { generateRssFeed } from '@/lib/generateRssFeed'
-import { getAllArticles } from '@/lib/getAllArticles'
-import { formatDate } from '@/lib/formatDate'
+import image1 from '@/images/paintings/painting_003.jpg'
+import image2 from '@/images/paintings/painting_004.jpg'
+import image3 from '@/images/paintings/painting_006.jpg'
+import image4 from '@/images/paintings/painting_015.jpg'
+import image5 from '@/images/paintings/painting_020.jpg'
 import Contact from '@/components/Contact'
 
 function SocialLink({ icon: Icon, ...props }) {
@@ -73,33 +62,20 @@ export default function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Schilder & fotograaf
+            Ja Nonssens - Schilder
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Ik ben Ja Nonssens. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          Mijn schilderijen, tekeningen en schetsen zijn herinneringen die ik tracht vast te houden.
           </p>
-          <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://twitter.com"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
-            />
-            <SocialLink
-              href="https://instagram.com"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            <SocialLink
-              href="https://github.com"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-            />
-            <SocialLink
-              href="https://linkedin.com"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
-            />
-          </div>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          Tal van plaatsen verliet ik onverzadigd omdat ik het daarbij horende gevoel terug moest loslaten. Foto’s konden me niet van dat gebrek verlossen. Met die beelden kon ik de beleving van daar ter plaatse niet vatten.
+          </p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          Door te schetsen, tekenen en schilderen kan ik dat ontbrekende gevoel beter invullen. Met een grote voorkeur maak ik voorbereidende schetsen ter plaatse.
+          </p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          De verwondering over het kleurenspektakel en het lichtspel in de natuur en het landschap staan vaak centraal in mijn werken. Het variërende landschap geef ik in verschillende schilderijen weer.
+          </p>
         </div>
       </Container>
       <Photos />
@@ -107,18 +83,4 @@ export default function Home() {
       <Contact />
     </>
   )
-}
-
-export async function getStaticProps() {
-  if (process.env.NODE_ENV === 'production') {
-    await generateRssFeed()
-  }
-
-  return {
-    props: {
-      articles: (await getAllArticles())
-        .slice(0, 4)
-        .map(({ component, ...meta }) => meta),
-    },
-  }
 }
