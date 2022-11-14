@@ -1,6 +1,5 @@
 import Image from 'next/future/image'
 import Head from 'next/head'
-import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
@@ -11,14 +10,6 @@ import image3 from '@/images/paintings/painting_006.jpg'
 import image4 from '@/images/paintings/painting_015.jpg'
 import image5 from '@/images/paintings/painting_020.jpg'
 import Contact from '@/components/Contact'
-
-function SocialLink({ icon: Icon, ...props }) {
-  return (
-    <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
-    </Link>
-  )
-}
 
 function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
