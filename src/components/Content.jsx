@@ -23,28 +23,6 @@ import painting21 from '@/images/paintings/painting_021.jpg'
 
 const themes = [
     {
-      title: 'Vluchtelingen Crisis',
-      description: 'De schrijnende  vluchtelingencrisis en de waanzin van een, nog maar eens, verscheurende oorlog lieten me niet onberoerd.',
-      paintings: [
-        {
-          title: 'Voor het vaderland',
-          description:
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-          uploadDate: '2022-11-09',
-          imageUrl: painting1,
-          alt: 'Voor het vaderland'
-        },
-        {
-          title: 'Op de vlucht',
-          description:
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-          uploadDate: '2022-11-09',
-          imageUrl: painting2,
-          alt: 'Op de vlucht'
-        },
-      ]
-    },
-    {
       title: 'Vlaamse Ardennen',
       description: 'De Vlaamse Ardennen en haar natuur zijn een ideale omgeving om een spel van kleuren, vormen, licht en contrasten op te bouwen. Een zonsondergang in de straat, het ochtendgloren in de vallei, een rij knoestige populieren in het herfstlicht, het zijn dankbare onderwerpen.',
       paintings: [
@@ -95,66 +73,6 @@ const themes = [
           imageUrl: painting8,
           alt: 'Woelig'
         }
-      ]
-    },
-    {
-      title:'Sociale & Maatschappelijke thema’s',
-      description: 'In een reeks van 4 schilderijen met een dorpsgezicht van Pourville wil ik met een spel van vlakken, kleuren en lijnen de urgentie van onze klimaatsverandering onder de aandacht brengen.',
-      paintings: [
-        {
-          title: 'Pourville sous mer 1',
-          description:
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-          uploadDate: '2022-11-09',
-          imageUrl: painting9,
-          alt: 'Pourville sous mer 1'
-        },
-        {
-          title: 'Pourville sous mer 2',
-          description:
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-          uploadDate: '2022-11-09',
-          imageUrl: painting10,
-          alt: 'Pourville sous mer 2'
-        },
-        {
-          title: 'Pourville sous mer 3',
-          description:
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-          uploadDate: '2022-11-09',
-          imageUrl: painting11,
-          alt: 'Pourville sous mer 3'
-        },
-        {
-          title: 'Pourville sous mer 4',
-          description:
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-          uploadDate: '2022-11-09',
-          imageUrl: painting12,
-          alt: 'Pourville sous mer 4'
-        }
-      ]
-    },
-    {
-      title: 'Treinzicht',
-      description: 'Soms hoef ik het niet ver te zoeken, een alledaags beeld dat een treinpendelaar voorbij ziet flitsen, kan een inspiratie zijn om mee aan de slag te gaan.',
-      paintings: [
-        {
-          title: 'Treinzicht 1',
-          description:
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-          uploadDate: '2022-11-09',
-          imageUrl: painting13,
-          alt: 'Treinzicht 1'
-        },
-        {
-          title: 'Treinzicht 2',
-          description:
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-          uploadDate: '2022-11-09',
-          imageUrl: painting14,
-          alt: 'Treinzicht 2'
-        },
       ]
     },
     {
@@ -218,7 +136,89 @@ const themes = [
           alt: 'Cement'
         },
       ]
-    }
+    },
+    {
+      title: 'Treinzicht',
+      description: 'Soms hoef ik het niet ver te zoeken, een alledaags beeld dat een treinpendelaar voorbij ziet flitsen, kan een inspiratie zijn om mee aan de slag te gaan.',
+      paintings: [
+        {
+          title: 'Treinzicht 1',
+          description:
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+          uploadDate: '2022-11-09',
+          imageUrl: painting13,
+          alt: 'Treinzicht 1'
+        },
+        {
+          title: 'Treinzicht 2',
+          description:
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+          uploadDate: '2022-11-09',
+          imageUrl: painting14,
+          alt: 'Treinzicht 2'
+        },
+      ]
+    },
+    {
+      title:'Sociale & Maatschappelijke thema’s',
+      description: 'In een reeks van 4 schilderijen met een dorpsgezicht van Pourville wil ik met een spel van vlakken, kleuren en lijnen de urgentie van onze klimaatsverandering onder de aandacht brengen.',
+      paintings: [
+        {
+          title: 'Pourville sous mer 1',
+          description:
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+          uploadDate: '2022-11-09',
+          imageUrl: painting9,
+          alt: 'Pourville sous mer 1'
+        },
+        {
+          title: 'Pourville sous mer 2',
+          description:
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+          uploadDate: '2022-11-09',
+          imageUrl: painting10,
+          alt: 'Pourville sous mer 2'
+        },
+        {
+          title: 'Pourville sous mer 3',
+          description:
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+          uploadDate: '2022-11-09',
+          imageUrl: painting11,
+          alt: 'Pourville sous mer 3'
+        },
+        {
+          title: 'Pourville sous mer 4',
+          description:
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+          uploadDate: '2022-11-09',
+          imageUrl: painting12,
+          alt: 'Pourville sous mer 4'
+        }
+      ]
+    },
+    {
+      title: 'Vluchtelingen Crisis',
+      description: 'De schrijnende vluchtelingencrisis en de waanzin van een, nog maar eens, verscheurende oorlog lieten me niet onberoerd.',
+      paintings: [
+        {
+          title: 'Voor het vaderland',
+          description:
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+          uploadDate: '2022-11-09',
+          imageUrl: painting1,
+          alt: 'Voor het vaderland'
+        },
+        {
+          title: 'Op de vlucht',
+          description:
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+          uploadDate: '2022-11-09',
+          imageUrl: painting2,
+          alt: 'Op de vlucht'
+        },
+      ]
+    },
 ]
   
 export const Content = () => {
